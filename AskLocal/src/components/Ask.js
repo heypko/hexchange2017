@@ -3,10 +3,12 @@ import { StyleSheet } from 'react-native';
 import { Button, Item, Text, Input, Content} from 'native-base';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
-
 export default class Ask extends React.Component {
 	render() {
-		var items = ['Simon Mignolet','Nathaniel Clyne','Dejan Lovren','Mama Sakho','Emre Can'];
+		var items = [];
+		for(var i = 0; i < 50; i++) {
+			items.push(`blabla number ${i}`);
+		}
 		return (
 			<Content>
 			    <Item regular>
@@ -20,10 +22,3 @@ export default class Ask extends React.Component {
 	}
 }
 
-const styles = StyleSheet.create({
-	actionButtonIcon: {
-		fontSize: 20,
-		height: 22,
-		color: 'white',
-	},
-});

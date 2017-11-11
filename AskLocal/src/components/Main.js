@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Container, Header, Content, Tab, Tabs, Left, Button, Icon, Right, Body, Title, Thumbnail, Badge } from 'native-base';
 
-
 import {
   StackNavigator,
 } from 'react-navigation';
@@ -10,6 +9,7 @@ import {
 import Chat from './Chat';
 import Ask from './Ask';
 import Answer from './Answer';
+import Profile from './Profile';
 
 export default class Main extends React.Component {
 	render() {
