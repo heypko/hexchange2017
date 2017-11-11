@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Container, Header, Content, Tab, Tabs } from 'native-base';
 
-import Question from './Question';
+import Ask from './Ask';
 import Answer from './Answer';
 
 export default class Main extends React.Component {
@@ -13,10 +13,12 @@ export default class Main extends React.Component {
 		<Tabs initialPage={1}>
 			<Tab heading="Profile">
 			</Tab>
-			<Tab heading="Question">
-				<Question/>
+			<Tab heading="Ask">
+				<Text> I ASK QUESTIONS </Text>
+				<Ask/>
 			</Tab>
 			<Tab heading="Answer">
+				<Text> I ANSWER QUESTIONS </Text>
 				<Answer/>
 			</Tab>
 		</Tabs>
