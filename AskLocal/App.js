@@ -1,18 +1,28 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component }  from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Container, Header, Content, Card, CardItem, Text, Icon, Right } from 'native-base';
 
-export default class App extends React.Component {
+
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={{flex:1}}>Open up App.js to start working on your app!</Text>
-        <Text style={{flex:2}}>Changes you make will automatically reload.</Text>
-        <Text >Shake your phone to open the developer menu.</Text>
-      </View>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem>
+              <Icon active name="logo-googleplus" />
+              <Text>Google Plus</Text>
+              <Right>
+                <Icon name="arrow-forward" />
+              </Right>
+             </CardItem>
+           </Card>
+        </Content>
+      </Container>
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
