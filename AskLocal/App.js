@@ -1,23 +1,10 @@
 import React from 'react';
 
-import Main from './src/Main';
-
-export default class App extends React.Component {
+import Main from './src/components/Main';
+export default class App extends Component {
   render() {
     return (
 		<Main/>
 );
   }
 }
-
-
-/*
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ccc',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-*/
