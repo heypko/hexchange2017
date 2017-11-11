@@ -8,7 +8,6 @@ export default class Chat extends React.Component {
 	render() {
 		return (
 			<Content>
-			  
 				<Button rounded success>
 					<Text>Chat</Text>
 				</Button>
