@@ -1,5 +1,14 @@
 {
   "expo": {
-    "sdkVersion": "22.0.0"
+    "name": "Kaito",
+    "version": "1.0.0",
+    "slug": "Kaito",
+    "sdkVersion": "22.0.0",
+    "ios": {
+      "bundleIdentifier": "com.flip.kaito"
+    },
+    "android": {
+      "package": "com.flip.kaito"
+    }
   }
 }
