@@ -4,9 +4,13 @@ import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Ic
 
 export default class Answer extends Component {
   render() {
+	const { navigate } = this.props.navigation;
 	let imgSrcs = {
 		thumb: 'http://lorempixel.com/400/200/people/',
 		img: 'http://lorempixel.com/100/100/sports/',
+	}
+	let onPressOpenChats = function() {
+		this.setState({chatsView: true});
 	}
     return (
       <Container>
@@ -35,7 +39,7 @@ export default class Answer extends Component {
 				</Button>
               </Left>
 			  <Right>
-				<Button rounded success>
+				<Button rounded success onPress={() => navigate('Chat')}>
 					<Text>Answer</Text>
 				</Button>
 			  </Right>
